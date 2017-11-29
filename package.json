@@ -1,0 +1,29 @@
+{
+  "name": "discordant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torchhound/discordant.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "torchhound",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torchhound/discordant/issues"
+  },
+  "homepage": "https://github.com/torchhound/discordant#readme",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "weather.js": "^0.1.0"
+  }
+}
