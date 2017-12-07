@@ -1,0 +1,4 @@
+var config = {
+	token: "DISCORD_TOKEN"
+};
+module.exports = config;
