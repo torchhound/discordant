@@ -1,4 +1,5 @@
 var config = {
-	token: "DISCORD_TOKEN"
+	discord_token: "DISCORD_TOKEN",
+	weather_token: "OPENWEATHERMAP_TOKEN"
 };
 module.exports = config;
