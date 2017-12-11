@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const weather = require('./tools/weatherQuery')
+const parse = require('./tools/parse');
 
 const client = new Discord.Client();
 
@@ -10,12 +10,11 @@ client.on('ready', () => {
   console.log('Discordant ready!');
 });
 
-client.on('message', message => { //TODO(torchhound) break into parsing module
-  if (message.content.includes("weather")) {
-  	var area = message.content.substring(message.content.indexOf("weather") + 1);
-  	var currentWeather = weather.currentLocalWeatherQuery(area);
-    message.channel.send(currentWeather);
-  }
+client.on('message', message => { 
+  parse.parse(message);
 });
+
+client.on("error", console.error);
+client.on("warn", console.warn);
 
 client.login(discordToken);
